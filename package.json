@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "@susisu/tskaigi2025",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write '*.js' src",
+    "format:check": "prettier --check '*.js' src",
+    "lint": "eslint --fix '*.js' src",
+    "lint:check": "eslint '*.js' src",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --coverage",
+    "test:dev": "vitest dev --coverage.enabled --coverage.reporter=text"
+  },
+  "dependencies": {
+    "@susisu/effectful": "^0.7.1"
+  },
+  "devDependencies": {
+    "@susisu/eslint-config": "^0.0.97",
+    "@types/node": "^22.15.21",
+    "@vitest/coverage-v8": "^3.1.4",
+    "eslint": "^9.27.0",
+    "globals": "^16.1.0",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "~5.8.3",
+    "vitest": "^3.1.4"
+  }
+}
